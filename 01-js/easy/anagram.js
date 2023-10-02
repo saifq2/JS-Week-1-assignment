@@ -8,7 +8,25 @@
 */
 
 function isAnagram(str1, str2) {
+  var s1=sortString(str1);
+  var s2=sortString(str2);
+   console.log(s1);
+   console.log(s2);
+  
+  if(s1===s2){
+    console.log("Anagram");
+  }
+  else{
+    console.log("No Anagaram")
+  }
 
 }
+function sortString(str){
+  var arr=str.split("");
+  arr.sort();
+  var sortedStr=arr.join("");
+  return sortedStr;
+}
+isAnagram("funeral","realfun");
 
 module.exports = isAnagram;
