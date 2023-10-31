@@ -17,7 +17,7 @@ function isAnagram(str1, str2) {
     console.log("Anagram");
   }
   else{
-    console.log("No Anagaram")
+    console.log("No Anagaram");
   }
 
 }
